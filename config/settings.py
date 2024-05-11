@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^qi(t+8k^*0^bizlif!w3wzzqj(220*srpajt*^4a4&pa41*&1'
+SECRET_KEY = 'django-insecure-+)$!1s4b))&x1(22b0g3e8l0i%2*rt@x7q5r3--tgju^^fjg&x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os,Path.joinpath(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'DB_Gestion_Stock',
+        'NAME': 'DB_Gestion_Stock',
         'USER':'user1',
         'PASSWORD':'12345',
         'HOST':'',
-        'PORT':'5432',
+        'PORT':'5432'
     }
 }
 
